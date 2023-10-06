@@ -1,0 +1,38 @@
+[
+  {
+    "songName": "Haal_-_Harnoor___Karan_Thabal____DM",
+    "filePath": "songs/0.mp3",
+    "coverPath": "cover/nu img 0.jpg",
+    "id": 0,
+    "du": "3:42"
+  },
+  {
+    "songName": "Jatta_Harnoor___Slowed_n__Reverb___",
+    "filePath": "songs/1.mp3",
+    "coverPath": "cover/nu img 1.jpg",
+    "id": 1,
+    "du": "2:42"
+  },
+  {
+    "songName": "Parshawan_-_Harnoor__Official_",
+    "filePath": "songs/1.mp3",
+    "coverPath": "cover/nu img 2.jpg",
+    "id": 2,
+    "du": "3:14"
+  },
+  {
+    "songName": "Tareefan_-_Harnoor__Official_song",
+    "filePath": "songs/1.mp3",
+    "coverPath": "cover/nu img 3.jpg",
+    "id": 3,
+    "du": "2:55"
+  },
+  {
+    "songName": "Waalian___Harnoor__Full_Song__Gifty__",
+    "filePath": "songs/1.mp3",
+    "coverPath": "cover/nu img 4.jpg",
+    "id": 4,
+    "du": "3:26"
+  } 
+ 
+]

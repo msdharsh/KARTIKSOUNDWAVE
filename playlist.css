@@ -1,0 +1,113 @@
+.playlist {
+  height: 76%;
+  width: 100%;
+  margin: auto;
+  padding-top: 1px;
+  align-items: center;
+  overflow: auto;
+  border-radius: 10px;
+}
+.songs {
+  background: linear-gradient(
+    rgba(112, 168, 221, 0.59),
+    rgba(117, 23, 114, 0.577),
+    rgba(7, 59, 3, 0.097)
+  );
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+
+}
+.playlist::-webkit-scrollbar {
+  display: none;
+}
+.play_h2 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.img_and_title {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  padding-left: 10px;
+  overflow: auto;
+}
+.song_cover {
+  height: 80px;
+  width: 80px;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+.time_play_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  overflow: auto;
+  position: absolute;
+  bottom: 20px;
+  left: 0%;
+}
+.song_duration {
+  margin-left: 1px;
+}
+.img_and_title::-webkit-scrollbar {
+  display: none;
+}
+.playsong_btn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  margin: 0;
+}
+
+.song_card {
+  background-color: #29272764;
+  width: 180px;
+  height: 330px;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: auto;
+  margin-left: 1.5rem;
+  margin-top: 1.5rem;
+  transition: all 0.5s;
+  overflow: auto;
+  text-align: center;
+  position: relative;
+}
+.song_card:hover {
+  background-color: #3d3c3ccc;
+}
+.song_card_img {
+  width: 100%;
+  height: 190px;
+  border-radius: 0.5rem;
+}
+.song_card::-webkit-scrollbar {
+  display: none;
+}
+.songcard_title {
+  font-size: 15px;
+  overflow-wrap: break-word;
+}
+
+.pointer:hover {
+  cursor: pointer;
+}
+
+.song_card_btns {
+  padding: 0 15px;
+}
+.download_btn {
+  border: 2px solid white;
+  border-radius: 100%;
+  padding: 0;
+  margin-left: 10px;
+  font-size: 20px;
+}
+.playlist_header {
+  display: none;
+}

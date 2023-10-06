@@ -1,0 +1,160 @@
+@media screen and (max-width:500px) {
+ 
+
+    .song_card {
+        background-color: #29272764;
+        width: 95%;
+        height: 80px;
+        border-radius: 0.5rem;
+        padding: 0 .5rem;
+        transition: all 0.5s;
+        overflow: auto;
+        text-align: center;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+       /*  background-color: red; */
+        justify-content: flex-start;
+        align-items: center;
+        margin: 4px auto;  
+      }
+      .song_card_img {
+        width: 50px;
+        height: 50px;
+        border-radius: 0.5rem;
+      }
+     .song_card_tit_img{
+    display: flex;
+    width: 65%;
+    height: 100%;
+    /* background-color: blue; */
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+     }
+     .time_play_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 10px;
+        overflow: auto;
+        position: absolute;
+        top: 10%;
+        left: 70%;
+        width: 40%;
+        height: 70%;
+       /*  background-color: green; */
+      }
+/* !----------------------------------------------------- */
+    .container_play{
+   height: 100vh;
+   width: 100vw;
+        padding-top: 3rem;
+        text-align: center;
+        color: antiquewhite;
+        border-radius: 10px;
+        background: linear-gradient(
+        rgba(112, 168, 221, 0.711),
+        rgba(143, 28, 139, 0.725),
+        rgba(230, 13, 129, 0.234)
+      );
+       display: flex;
+       flex-direction: column;
+       justify-content: flex-start;
+       align-items: center;
+       }
+       .center_play{
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+        
+           
+           
+       }.paying_cover_img{
+           height: 230px;
+           width: 230px;
+           border-radius: 50%;
+           box-shadow: 5px 5px 50px rgba(235, 21, 100, 0.81);
+        animation: rotate 7s linear infinite;
+          
+       }
+       @keyframes rotate {
+        0%{
+            transform: rotate(0deg);
+        }100%{
+            transform: rotate(360deg);
+        }
+       }
+       
+       .playing_title{
+           padding-top: 3rem;
+           font-size: 2rem;
+           width: 100%;
+            
+         
+       }    #inp_range{
+           width: 60vw;
+           
+         
+       }.inr{
+           padding-top: 2.3rem;
+        position: relative;
+           width: 100%;
+           height: 90px;
+
+         
+       }
+       #inp_range_pb{
+width: 80%;
+       }
+       #runing_time{
+           position: absolute;
+           left: 40px;
+           bottom: 0px;
+           font-size: 1.2rem;
+           font-weight: 600;
+         
+       }#total_time{
+       position: absolute;
+       right: 40px;
+       bottom: 0;
+       font-size: 1.2rem;
+       font-weight: 600;
+       }
+       
+       .icons{
+           display: flex;
+           justify-content: space-evenly;
+           width: 100%;
+           margin-top: 3.2rem;
+           align-items: center;
+       
+       }.music{
+           cursor: pointer;
+           margin:0 1rem;
+       } .bu_icon{
+           cursor: pointer;
+       }.chillM{
+           padding-bottom: 2rem;
+       } 
+       .homeicons_playlist{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 4rem;
+        width: 90%;
+     
+      
+       }
+
+
+       .homeicons_playlist button{
+background-color: transparent;
+border: none;
+color: aliceblue;
+font-size: 2.5rem;
+       }
+}
+
+ 
+ 

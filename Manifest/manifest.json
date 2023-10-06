@@ -1,0 +1,23 @@
+{
+    "short_name": "SongWave",
+    "name": "SongWave:Music for everyone",
+    "icons": [
+      {
+        "src": "../assets/SongWave-fotor-20230720122612.png",
+        "type": "image/png",
+        "sizes": "328x328"
+      },
+      {
+        "src": "../assets/SongWave-fotor-20230720122612.png",
+        "type": "image/png",
+        "sizes": "328x328"
+      }
+    
+    ],
+    "id": "/?source=pwa",
+    "start_url": "https://song-wave-music-app.vercel.app",
+    "background_color": "#3367D6",
+    "display": "standalone",
+    "theme_color": "#3367D6"
+   
+  }

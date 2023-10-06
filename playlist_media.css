@@ -1,0 +1,156 @@
+
+
+   /*!  responsive */
+   @media screen and (max-width: 500px) {
+    .none{
+      display: inline-block;
+     }
+    .sidebar {
+      display: none;
+    }
+    .songs {
+      background: transparent;
+      display: flex;
+      flex-direction: column;
+      
+    }.songs h2{
+      margin: 40px 0 0 7%;
+      font-weight: 500;
+      height: 40px;
+    }
+    .sticky_nav {
+      background: transparent;
+    }
+    .bg_main {
+      background: linear-gradient(
+        rgba(112, 169, 221, 0.375),
+        rgba(117, 23, 114, 0.21),
+        rgba(31, 230, 13, 0)
+      );
+      padding: 0;
+      border-radius: 0;
+    }
+    .playlist_header {
+      display: flex;
+      flex-direction: column;
+      margin-left: 30px;
+    }
+    .playlist_header_img {
+      height: 150px;
+      width: 150px;
+      border-radius: 10px;
+    }
+    .playlist_header_title {
+      margin-top: 15px;
+      width: 300px;
+      font-weight: 400;
+      word-break: break-all;
+      overflow: auto;
+      font-size: 20px;
+    }
+    .play_shuffle_btn{
+     
+      display: flex;
+      justify-content: space-around;
+      width: 95%;
+      margin-top: 15px;
+    }
+    .play_shuffle_btn button{
+      width: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 38px;
+      border-radius: 8px;
+      border: none;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgba(125, 120, 120, 0.349);
+      letter-spacing: 1px;
+      font-size: 15px;
+    }
+    .play_shuffle_btn button i {
+  margin-right: 15px;
+    }
+    .play_shuffle_btn button:hover{
+      cursor: pointer;
+      background-color: rgba(125, 120, 120, 0.542);
+    }
+   #playlist_play_btn{
+      color: black;
+      background-color: rgba(0, 255, 255, 0.74);
+   }
+   #playlist_play_btn:hover{
+     
+      background-color: rgba(162, 233, 233, 0.795);
+   }
+
+   .song_card {
+      background-color: #29272764;
+      width: 95%;
+      height: 80px;
+      border-radius: 0.5rem;
+      padding: 0 .5rem;
+      transition: all 0.5s;
+      overflow: auto;
+      text-align: center;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+     /*  background-color: red; */
+      justify-content: flex-start;
+      align-items: center;
+      margin: 4px auto;  
+    }
+    .song_card_img {
+      width: 50px;
+      height: 50px;
+      border-radius: 0.5rem;
+    }
+   .song_card_tit_img{
+  display: flex;
+  width: 65%;
+  height: 100%;
+  /* background-color: blue; */
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+   }
+   .time_play_btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-right: 10px;
+      overflow: auto;
+      position: absolute;
+      top: 10%;
+      left: 70%;
+      width: 40%;
+      height: 70%;
+     /*  background-color: green; */
+    }
+    .download_btn{
+      display: none;
+    }.song_duration{
+      margin: 0;
+      padding: 0;
+    }
+    .songcard_title {
+      font-size: 15px;
+      overflow-wrap: auto;
+      text-align: left;
+      margin-left: 15px;
+    }
+    .d_none{
+      display: none;
+    }
+    .player{
+      width: 100%;
+    }
+    .all_btn{
+      background-color: transparent;
+      border: none;
+      color: white;
+    }
+  }
+  

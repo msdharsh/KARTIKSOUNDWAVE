@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/SongWave-fotor-20230720122612.png" />
+    <title>KARTIK'S MUSIC SYSTEM</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="playlist.css" />
+    <link rel="stylesheet" href="home_media.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="manifest" href="./Manifest/manifest.json">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <!--!  sidebar -->
+      <div class="sidebar">
+        <!--* navigation -->
+        <div class="nav">
+          <div class="nav_option">
+            <i class="fa-solid fa-house"></i>
+            <a href="#" class="dis_none">Home</a>
+          </div>
+          <div class="nav_option">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="#" class="dis_none">Search</a>
+          </div>
+        </div>
+
+        <!--* library -->
+        <div class="library">
+          <div class="options">
+            <div class="library_option nav_option">
+              <button class="library_btn">
+                <img src="./assets/library_icon.png" alt="library-icon" />
+              </button>
+              <a href="#" class="dis_none">Your Library</a>
+            </div>
+            <div class="icons dis_none">
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+
+          <div class="lib_boxes dis_none">
+            <div class="box">
+              <p class="box_p1">Create your first playlist with KARTIK'S songwave</p>
+              <p class="box_p2">It's easy, we'll help you</p>
+              <button class="badge">Create playlist</button>
+            </div>
+          </div>
+          <div class="lib_boxes dis_none">
+            <div class="box">
+              <p class="box_p1">Let's find some podcasts to follow</p>
+              <p class="box_p2">We'll keep you updated on new episodes</p>
+              <button class="badge">Brows podcast</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--!  main_content -->
+      <div class="main_content bg_main">
+        <!--* sticky navbar -->
+        <div class="sticky_nav">
+          <div class="sticky_nav_icons">
+            <a href="playlist.html">
+              <img src="./assets/forward_icon.png" alt="forward_icon"
+            /></a>
+          </div>
+          <div class="sticky_nav_options">
+            <button class="badge nav_item hide">Explore KARTIK'S Premium</button>
+            <button class="badge nav_item dark_badge download_app">
+              <i class="fa-regular fa-circle-down " style="margin-right: 7px"></i
+              >Download App
+            </button>
+            <i class="fa-regular fa-user nav_item"></i>
+          </div>
+        </div>
+ 
+        <!--*  Card section -->
+        <div class="img_after_sticky_nav none">
+          <h2><br><br><br></h2>
+          <p>
+            (cool. <br />
+            music everyday)
+          </p>
+          <a href="playlist.html" class="listen_now">
+            <i class="fa-solid fa-play"></i>
+            <p>Listen now</p></a
+          >
+        </div>
+
+        <h2 class="card_heading">KARTIK'S Recently Played</h2>
+        <div class="cards_conntainer">
+          <a href="playlist.html">
+            <div class="card">
+              <img
+                src="./assets/chill.jpg"
+                alt="card1img"
+                class="card_img"
+              />
+              <p class="card_title">KARTIK'S favorite❤️</p>
+              <p class="card_info">Your daily updates of the most played...</p>
+            </div></a
+          >
+        </div>
+
+        <h2 class="card_heading">Trending now near you with KARTIK</h2>
+        <div class="cards_conntainer">
+          <a href="./harnoor/hrnoor.html">
+            <div class="card">
+              <img
+                src="./assets/Harnoor.jpg"
+                alt="card1img"
+                class="card_img"
+              />
+              <p class="card_title">KARTIK'S Harnoor - Songs</p>
+              <p class="card_info">Your daily updates of the most played...</p>
+            </div></a
+          >
+
+          <a href="playlist.html">
+            <div class="card">
+              <img
+                src="./assets/mind relax lofi song.jpg"
+                alt="card1img"
+                class="card_img"
+              />
+              <p class="card_title">KARTIK'S Lofi Songs</p>
+              <p class="card_info">Your daily updates of the most played...</p>
+            </div>
+          </a>
+
+          <a href="playlist.html">
+            <div class="card">
+              <img
+                src="./assets/arjit singh.webp"
+                alt="card1img"
+                class="card_img"
+              />
+              <p class="card_title">KARTIK'S FAV(ARJIT SINGH)</p>
+              <p class="card_info">Your daily updates of the most played...</p>
+            </div>
+          </a>
+
+          <a href="playlist.html">
+            <div class="card">
+              <img
+                src="./assets/midnight relaxing.jpg"
+                alt="card1img"
+                class="card_img"
+              />
+              <p class="card_title">KARTIK'S Midnight - relax</p>
+              <p class="card_info">Your daily updates of the most played...</p>
+            </div>
+          </a>
+
+          <a href="/harnoor/hrnoor.html">
+            <div class="card">
+              <img
+                src="./assets/Harnoor.jpg"
+                alt="card1img"
+                class="card_img"
+              />
+              <p class="card_title">KARTIK'S Top 50 - Global</p>
+              <p class="card_info">Your daily updates of the most played...</p>
+            </div>
+          </a>
+        </div>
+
+        <h2 class="card_heading">KARTIK'S Featured Charts</h2>
+        <div class="cards_conntainer">
+        <a href="playlist.html">
+          <div class="card">
+            <img src="./assets/card5img.jpeg" alt="card1img" class="card_img" />
+            <p class="card_title">Top Songs - Global</p>
+            <p class="card_info">Your daily updates of the most played...</p>
+          </div>
+        </a>
+
+<a href="playlist.html">
+  <div class="card">
+    <img src="./assets/card6img.jpeg" alt="card1img" class="card_img" />
+    <p class="card_title">KARTIK'S Top Songs - India</p>
+    <p class="card_info">Your daily updates of the most played...</p>
+  </div>
+</a>
+      
+         <a href="playlist.html"> <div class="card">
+          <img src="./assets/card1img.jpeg" alt="card1img" class="card_img" />
+          <p class="card_title">KARTIK'S Top 50 - Global</p>
+          <p class="card_info">Your daily updates of the most played...</p>
+        </div></a>
+        </div>
+        <div class="footer">
+          <div class="line"></div>
+        </div>
+      </div>
+
+      <!--!   music player -->
+      <div class="music_player">
+        <!--*   Album -->
+        <div class="album"></div>
+
+        <!--*   music player -->
+        <div class="player">
+          <div class="player_control">
+          <a href="playlist.html"><i class="fa-solid fa-hand-point-right player_control_icon" ></i></a>
+            <i class="fa-solid fa-backward-step player_control_icon"></i>
+            <a href="playlist.html">
+              <i
+                class="fa-solid fa-circle-play player_control_icon"
+                style="opacity: 1; font-size: 2rem"
+              ></i
+            ></a>
+            <i class="fa-solid fa-forward-step player_control_icon"></i>
+            <i class="fa-solid fa-reply player_control_icon"></i>
+          </div>
+          <div class="playback_bar">
+            <span class="curr_time">00:00</span>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              class="porgress_bar"
+              step="1"
+              value="0"
+            />
+            <span class="tot_time">00:00</span>
+          </div>
+        </div>
+
+        <!--*   controls -->
+        <div class="controls">
+          <img
+            src="./assets/controls_icon3.png"
+            alt="controls_icon3"
+            class="controls_icons"
+            style="height: 1.2rem"
+          />
+          <img
+            src="./assets/controls_icon5.png"
+            alt="controls_icon5"
+            class="controls_icons"
+          />
+          <input
+            type="range"
+            min="0"
+            max="100"
+            step="1"
+            value="0"
+            class="volume_range"
+          />
+        </div>
+      </div>
+    </div>
+    
+    <script src="responsive.js"></script>
+    <script type="text/javascript" src="./Manifest/add_home_screen.js"></script>
+  </body>
+</html>

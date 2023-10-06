@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/SongWave-fotor-20230720122612.png" />
+    <title>SongWave - Harnoor: playlist</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/playlist.css" />
+    <link rel="stylesheet" href="/playlist_media.css" />
+    <link rel="stylesheet" href="/playbox.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="container1">
+      <div class="main bg_main">
+        <!--!  sidebar -->
+        <div class="sidebar">
+          <!--* navigation -->
+          <div class="nav">
+            <div class="nav_option">
+              <i class="fa-solid fa-house"></i>
+              <a href="index.html" class="dis_none">Home</a>
+            </div>
+            <div class="nav_option">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <a href="#" class="dis_none">Search</a>
+            </div>
+          </div>
+
+          <!--* library -->
+          <div class="library">
+            <div class="options">
+              <div class="library_option nav_option">
+                <button class="library_btn">
+                  <img src="../assets/library_icon.png" alt="library-icon" />
+                </button>
+                <a href="#" class="dis_none">Your Library</a>
+              </div>
+              <div class="icons dis_none">
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+
+            <div class="lib_boxes dis_none">
+              <div class="box">
+                <p class="box_p1">Create your first playlist</p>
+                <p class="box_p2">It's easy, we'll help you</p>
+                <button class="badge">Create playlist</button>
+              </div>
+            </div>
+            <div class="lib_boxes dis_none">
+              <div class="box">
+                <p class="box_p1">Let's find some podcasts to follow</p>
+                <p class="box_p2">We'll keep you updated on new episodes</p>
+                <button class="badge">Brows podcast</button>
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+        <!--!  main_content -->
+        <div class="main_content bg_main">
+          <!--* sticky navbar -->
+          <div class="sticky_nav">
+            <div class="sticky_nav_icons">
+              <a href="/index.html">
+                <img src="../assets/backward_icon.png" alt="backward_icon"
+              /></a>
+              <img
+                src="../assets/forward_icon.png"
+                alt="forward_icon"
+                class="hide"
+              />
+            </div>
+            <div class="sticky_nav_options">
+            
+              <i class="fa-regular fa-user nav_item"></i>
+            </div>
+          </div>
+
+          <!--*  Playlist section -->
+          <div class="playlist">
+            <div class="playlist_header" id="playlist_header"></div>
+            <div class="play_shuffle_btn none">
+              <button id="playlist_play_btn">
+                <i class="fa-solid fa-play" id="playlist_play_btn_icon"></i>
+                <p>play</p>
+              </button>
+              <button>
+                <i class="fa-solid fa-shuffle"></i>
+                <p>shuffle</p>
+              </button>
+            </div>
+
+            <div class="songs" id="songsCon">
+              <h2 class="none">Top Tracks</h2>
+            </div>
+            <!-- songs div end -->
+          </div>
+          <!-- playlist div end -->
+        </div>
+        <!--main_Content div end-->
+
+        <!--!   music player -->
+        <div class="music_player">
+          <!--*   Album -->
+          <div class="album d_none" id="album"></div>
+
+          <!--*   music player -->
+          <div class="player">
+            <div class="player_control">
+              <i
+                class="pointer fa-solid fa-hand-point-right player_control_icon"  id="goto_playabr"
+              ></i>
+              <i
+                class="pointer fa-solid fa-backward-step player_control_icon"
+                id="pre_song_btn"
+              ></i>
+              <i
+                class="pointer fa-solid fa-circle-play player_control_icon"
+                style="opacity: 1; font-size: 2rem"
+                id="master_player"
+              ></i>
+              <i
+                class="pointer fa-solid fa-forward-step player_control_icon"
+                id="next_song_btn"
+              ></i>
+              <i class="pointer fa-solid fa-reply player_control_icon" id="reply_btn"></i>
+            </div>
+            <div class="playback_bar">
+              <span id="min_runing">0</span>: <span id="sec_runing">00</span>
+              <input
+                type="range"
+                min="0"
+                max="100"
+                class="porgress_bar"
+                id="inp_range"
+                value="0"
+              />
+              <span id="min_totel">0</span>: <span id="sec_totel">00</span>
+            </div>
+          </div>
+
+          <!--*   controls -->
+          <div class="controls d_none">
+            <img
+              src="../assets/controls_icon3.png"
+              alt="controls_icon3"
+              class="controls_icons"
+              style="height: 1.2rem"
+            />
+            <img
+              src="../assets/controls_icon5.png"
+              alt="controls_icon5"
+              class="controls_icons"
+            />
+            <input
+              type="range"
+              min="0"
+              max="100"
+              step="1"
+              value="70"
+              class="volume_range"
+              id="volume_rang"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--!  playbar-------------------------------------------------------- -->
+    <!-- ? container2 -->
+    <div id="container2">
+      <!--!play box-->
+      <div class="container_play" >
+        <div class="center_play">
+          <h2 class="chillM"><a href="/index.html">🎧 SongWave 🎸</a></h2>
+
+        <div id="container_play_album">
+         
+        </div>
+        
+            <!--!Range-->
+            <div class="inr">
+              <input type="range" max="100" min="0" id="inp_range_pb" value="0" />
+              <p id="runing_time">
+                <span id="min_runing_pb">0</span>: <span id="sec_runing_pb">00</span>
+              </p>
+              <p id="total_time">
+                <span id="min_totel_pb">0</span>: <span id="sec_totel_pb">00</span>
+              </p>
+            </div>
+
+          <!--!buttons-->
+
+          <div class="icons">
+            <i class="fa-solid fa-backward-step fa-2x music" id="previous"></i>
+            <i
+              class="fa-regular fa-circle-play fa-2x music"
+              id="masterplay_playbox"
+            ></i>
+
+            <i class="fa-solid fa-forward-step fa-2x music" id="next"></i>
+          </div>
+
+       
+
+        </div>
+        
+ 
+
+        <div class="homeicons_playlist">
+       
+     <button>   <a href="/index.html">   <i
+      class="fa-solid fa-house-chimney-crack bu_icon"
+    ></i></a></button>
+
+<button class="playlist_btn_playbox">          <i class="fa-brands fa-playstation bu_icon"></i></button>
+        </div>
+
+
+      </div>
+    </div>
+
+    <script src="harnoor.js"></script>
+    <script src="/responsive.js"></script>
+ 
+  </body>
+</html>
